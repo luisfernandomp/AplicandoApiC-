@@ -50,9 +50,16 @@ namespace Jogadores.Controllers
                 return BadRequest(new
                 {
                     statusCode = 400,
-                    error = "Ocorreu um erro no endpoint Get/produtos, envie um e-mail para email@email.com informando"
+                    error = "Ocorreu um erro no endpoint Get/Jogos"
                 });
             }
+        }
+
+        //GET api/<JogadorController>/5
+        [HttpGet("{id}")]
+        public string Get(int id)
+        {
+            return "value";
         }
 
         // POST api/<JogadorController>
