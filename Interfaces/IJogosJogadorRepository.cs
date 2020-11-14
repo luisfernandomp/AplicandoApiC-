@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Jogadores.Interfaces
 {
-    interface IJogosJogador
+    interface IJogadorRepository
     {
         /// <summary>
         /// Método para listar todas as relações entre jogo e jogador
@@ -26,7 +26,7 @@ namespace Jogadores.Interfaces
         /// </summary>
         /// <param name="jogosJ">Objeto do tipo JogosJogador</param>
         /// <returns>Objeto JogosJogador cadastrado</returns>
-        JogosJogador Adicionar(JogosJogador jogosJ);
+        void Adicionar(JogosJogador jogosJ);
 
         /// <summary>
         /// Método para Alterar uma relação entre jogo e jogador
